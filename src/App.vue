@@ -39,6 +39,7 @@
           src="https://pbs.twimg.com/profile_images/1293181369665744897/hFU3cZPa_400x400.jpg"
           class="rounded-circle"
           width="50%"
+          
         />
         <p>
           <br />
@@ -60,11 +61,6 @@ export default {
     Button,
   },
 
-  data: function () {
-    return {
-      total: 0, //ผลรวมทั้งหมด  -->เอาไปแสดงผล {{}}
-    };
-  },
 };
 </script>
 

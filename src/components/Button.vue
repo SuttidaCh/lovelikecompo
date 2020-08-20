@@ -1,12 +1,12 @@
 <template>
   <div>
-    <button @click="likeFunction" class="btn btn-dark ml-2">👍</button>
-    <button @click="loveFunction" class="btn btn-dark ml-2">🧡</button>
-    <button @click="hahaFunction" class="btn btn-dark ml-2">😆</button>
-    <button @click="wowFunction" class="btn btn-dark ml-2">😮</button>
-    <button @click="sadFunction" class="btn btn-dark ml-2">😢</button>
-    <button @click="angryFunction" class="btn btn-dark ml-2">😡</button>
-    <button @click="resetFunction" class="btn btn-dark ml-2">reset</button>
+    <button @click="likeFunction" class="btn btn-dark ml-2" title="Like">👍 </button>
+    <button @click="loveFunction" class="btn btn-dark ml-2" title="Love">🧡</button>
+    <button @click="hahaFunction" class="btn btn-dark ml-2" title="Haha">😆</button>
+    <button @click="wowFunction" class="btn btn-dark ml-2" title="Wow">😮</button>
+    <button @click="sadFunction" class="btn btn-dark ml-2" title="Sad">😢</button>
+    <button @click="angryFunction" class="btn btn-dark ml-2" title="Angry">😡</button>
+    <button @click="resetFunction" class="btn btn-dark ml-2" title="Reset">reset</button>
     <p v-bind:style="{ fontSize: fsize + 'px' }">{{ button }}</p>
   </div>
 </template>
@@ -17,6 +17,7 @@ export default {
     return {
       button: 0,
       fsize: 40,
+      
     };
   },
 
