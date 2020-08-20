@@ -17,7 +17,6 @@ export default {
     return {
       button: 0,
       fsize: 40,
-      
     };
   },
 
